@@ -8,6 +8,7 @@ const func: FuncType = (n,m,l) => {
 func(23,32,43)
 */
 
+/*
 type FuncType = (n:number, m:number, ) => number;
 
 const func: FuncType = (n,m,) => {
@@ -16,3 +17,16 @@ const func: FuncType = (n,m,) => {
 };
 
 func(25,23);
+
+*/
+
+type GetDataType = (product:{
+    name:string;
+    stock:number;
+    price:number;
+    photo:string;
+}) => void;
+
+const getData: GetDataType =(product) =>{
+    console.log(product);
+};
